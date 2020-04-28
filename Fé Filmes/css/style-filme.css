@@ -1,0 +1,295 @@
+h1, h2, h3, h4, h5, p{
+    color: white;
+    margin: 5px;
+}
+body{
+    margin: 0;
+    background-color: #1f1f1f;
+}
+
+
+#topo{
+    background: black;
+    height: 600px;  
+
+}
+
+#foto-capa {    
+    background-image: url(../img-filme/eu-acredito.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#foto-capa::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,#000,rgba(0,0,0,.5) 48%,rgba(0,0,0,.1) 64%);
+    background-position: right;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    
+    
+}
+#foto-capa img{    
+    height: auto;
+    max-width:100%;
+    position: absolute;
+}
+
+#descricao{
+    width: 80%;
+    margin: auto;
+    margin-top: 20%;
+
+}
+#descricao a{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 40%;
+}
+#detalhes{
+    height: 500px;
+    margin: 0;
+
+}
+#logo{
+    color: white !important;
+}
+#menu{
+    padding: 2%;
+    position: absolute;
+    z-index: 1;
+}
+#menu2{
+    margin-right: -10px;
+    background-color: transparent !important;
+}
+.nav-link{
+    color: #c9c9c9 !important;
+}
+.nav-link:hover{
+    color: #fff !important;
+}
+#em-breve{
+    background-color: yellow;
+    color: #000;
+    border: none;
+    font-weight: bold;
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 5%;
+
+}
+#assistir-filme{
+    color: #000;
+    border: none;
+    font-weight: bold;
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 5%;
+
+}
+#assistir-filme:hover{
+    color: white;
+    background-color: #1f1f1f;
+    border: none;
+}
+#trailer{
+    color: #888;
+    border: 2px solid #888;
+    font-weight: bold;
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+#trailer:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+#credito {
+    background-color: #1f1f1f;
+    height: 300px;
+
+}
+#titulo-credito{
+    padding-left: 10%;
+    padding-top: 1%;
+
+}
+#titulo-credito h1{
+    border-bottom: 10px solid white;
+}
+#topicos{
+    padding-left: 10%;
+    padding-top: 1%;
+}
+#footer{
+    background-color: #424242; 
+    height: 50px; 
+    padding: 5px;
+    bottom: 0 !important;
+
+}
+#footer p{
+    text-align: center;
+    color: #979797;
+}
+.modal-content{
+    height: 480px;
+    padding: 0;
+}
+.dropdown-menu{
+background-color: #1f1f1f;
+}
+.dropdown-menu a:hover{
+    color: #1f1f1f;
+    }
+.dropdown-menu::after {
+
+    content: "";
+    
+    width: 0;
+    height: 0;
+    
+    position: absolute;
+    z-index: 10;
+    
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #1f1f1f;
+    
+    top: -15px;
+    left: 20%;
+    z-index: 15;
+
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+.dropdown-item{
+    color: #fff !important;
+}
+.dropdown-item:hover{
+    color: #000 !important;
+}
+
+/*RESPONSIVO*/
+@media screen and (max-width: 1280px){
+    
+    #assistir-filme{
+        width: 50%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 414px){
+    #foto-capa{
+        display: none;     
+    }
+    #credito{
+        height: 450px;
+    }
+    #menu{
+        position: relative;
+    }
+    #descricao{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    #menu-btn {
+        margin-left: 240px;
+    }
+}
+@media screen and (max-width: 375px){
+    #foto-capa{
+        height: 300px;
+        margin-top: 30px;
+        display: none;     
+    }
+    #topo{
+        height: 700px;
+    }
+    #assistir-filme{
+        width: 50%;
+        margin-left: 5%;
+    }
+    #trailer{
+        font-size: 12px;
+    }
+    #assistir-filme{
+        font-size: 12px;
+    }
+    #credito{
+        height: 450px;
+    }
+    #footer{
+        font-size: 12px;
+    }
+    .modal-content{
+        height: 300px;
+    }
+    .dropdown-menu::after {
+        display: none;
+    }
+    #em-breve{
+        font-size: 12px;
+    }
+    #menu{
+        position: relative;
+    }
+    #descricao{
+        margin-top: 2%;
+    }
+    #menu-btn {
+        margin-left: 190px;
+    }
+
+ 
+}
+
+@media screen and (max-width: 360px){
+    #menu-btn {
+        margin-left: 185px;
+    }
+}
+@media screen and (max-width: 320px){
+    #foto-capa{
+        height: 300px;
+        margin-top: 30px;
+        display: none;     
+    }
+    #topo{
+        height: 750px;
+    }
+    #assistir-filme{
+        width: 50%;
+        margin-left: 5%;
+    }
+    #trailer{
+        font-size: 12px;
+    }
+    #assistir-filme{
+        font-size: 12px;
+    }
+    #em-breve{
+        font-size: 12px;
+    }
+    #credito{
+        height: 450px;
+    }
+    #footer{
+        font-size: 12px;
+    }
+    .dropdown-menu::after {
+        display: none;
+    }
+    #menu-btn {
+        margin-left: 150px;
+    }
+}
